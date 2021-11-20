@@ -1,0 +1,15 @@
+{
+	"files.associations": {
+		"*.html": "html",
+		"*.h": "cpp",
+		"ostream": "cpp",
+		"iosfwd": "cpp",
+		"iostream": "cpp",
+		"chrono": "cpp",
+		"random": "cpp",
+		"limits": "cpp",
+		"valarray": "cpp",
+		"bitset": "cpp",
+		"algorithm": "cpp"
+	}
+}
