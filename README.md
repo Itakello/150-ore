@@ -1,0 +1,25 @@
+# Già fatti dai ragazzi
+
+* Boring -> Normale
+* Brackets -> Queue
+* Buckets -> Sort
+
+---------------------------------
+
+# Completati
+
+* Disks -> Normale
+* Police3 -> PD (inversa)
+* Metro -> String matching
+
+---------------------------------
+
+# Da fare
+
+* Ucl -> Funziona solo col caso di test
+* Keygen -> Parsing + BOH
+* Martianwar -> Grafi + Componenti connesse o Cicli
+* Renovations -> 
+* Picarats -> Grafo, scelta in base a difficoltà nodo e peso arco
+  * Difficoltà minore
+  * Peso maggiore
