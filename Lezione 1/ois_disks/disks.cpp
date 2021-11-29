@@ -13,7 +13,6 @@ int main() {
 
     days = T / 24;
     tot = (days * (B - A));
-
     T %= 24;
     int free_hours = (24 - B) + A;
     T -= free_hours;

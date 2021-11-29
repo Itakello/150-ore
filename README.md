@@ -1,16 +1,10 @@
-# Già fatti dai ragazzi
-
-* Boring -> Normale
-* Brackets -> Queue
-* Buckets -> Sort
-
----------------------------------
-
-# Completati
+# Lezione 1
 
 * Disks -> Normale
 * Police3 -> PD (inversa)
-* Metro -> String matching
+
+# Lezione 2
+* Metro -> String matching - Non punteggio pieno
 
 ---------------------------------
 

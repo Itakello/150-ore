@@ -20,8 +20,9 @@ int main() {
 
 	int incl = T[0];
 	int excl = 0;
-	tot += T[0];
 	int excl_new;
+	tot += T[0];
+
 	for (int i = 1; i < N; i++) {
 		tot += T[i];
 		excl_new = (incl > excl) ? incl : excl;

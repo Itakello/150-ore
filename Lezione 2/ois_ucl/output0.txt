@@ -1,0 +1,6 @@
+Unique
+Not unique
+Not unique
+Invalid
+Unique
+Invalid
