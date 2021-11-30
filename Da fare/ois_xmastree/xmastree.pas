@@ -2,13 +2,12 @@
 
 { constraints }
 const
-    MAXN = 10000;
+    MAXN = 200000;
 
 { input data }
 var
-    N, M, C_0, i  : longint;
-    a, b, c  : longint;
-    P     : array[0..MAXN-1] of longint;
+    N, i, lighta, lightb  : longint;
+    A     : array[0..MAXN-1] of longint;
 
 begin
 {
@@ -17,12 +16,15 @@ begin
     assign(output, 'output.txt'); rewrite(output);
 }
 
-    readln(N, M, C_0);
+    readln(N);
+    for i:=0 to N-2 do
+    begin
+        readln(lighta, lightb);
+        { TODO: there is a branch between lighta and lightb }
+    end;
     for i:=0 to N-1 do
-        read(P[i]);
+        read(A[i]);
     readln();
-    for i:=0 to M-1 do
-        readln(a, b, c);
 
     { insert your code here }
 
