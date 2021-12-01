@@ -1,4 +1,6 @@
 // Link
+#pragma GCC optimize ("Ofast") 
+#pragma GCC optimization ("unroll-loops")
 #include <bits/stdc++.h>
 
 using namespace std;
