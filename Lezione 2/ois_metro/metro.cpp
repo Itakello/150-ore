@@ -1,8 +1,6 @@
 // https://training.olinfo.it/#/task/ois_metro/submissions
-
 #include <bits/stdc++.h>
 using namespace std;
-
 
 string forwardd, backward, obs;
 
@@ -37,7 +35,7 @@ int solve() {
 	}
 
 int main(int argc, char** argv) {
-	if (argc > 1) { (void)!freopen(argv[1], "r", stdin); }
+	if (argc > 1) { (void)!freopen(argv[1], "r", stdin); } //
 	int N, M;
 	cin >> N >> forwardd >> backward >> M >> obs;
 	cout << solve() << endl;
