@@ -11,7 +11,7 @@
 * Trap -> Mappa + Set + Comando per velocizzare input
 
 # Lezione 4 - 1/02/2022
-* 
+* Viaggio -> Grafi + Dijkstra
 
 ---------------------------------
 
@@ -19,10 +19,13 @@
 
 * Ucl -> Funziona solo col caso di test
 * Keygen -> Parsing + BOH
-* Martianwar -> Grafi + Componenti connesse o Cicli
+* Martianwar -> Grafi - [Bridge](https://en.wikipedia.org/wiki/Bridge_%28graph_theory%29)
 * Renovations -> 
 * Picarats -> Grafo, scelta in base a difficoltà nodo e peso arco
   * Difficoltà minore
   * Peso maggiore
+* Viaggio -> Grafi
+* Barbablu -> Grafi
+* Ponti -> Grafi
 
 # Fatti
