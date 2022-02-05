@@ -29,3 +29,6 @@
 * Ponti -> Grafi
 
 # Fatti
+
+# Prof
+* Wine -> K^th minimum contiguos subsequence
