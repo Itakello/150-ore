@@ -1,4 +1,4 @@
-// https://training.olinfo.it/#/task/ois_police3/submissions
+//https://training.olinfo.it/#/task/ois_police3/statement
 
 #include <iostream>
 #include <fstream>
