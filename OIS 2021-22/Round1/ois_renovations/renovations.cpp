@@ -14,6 +14,7 @@ int N, Q, K, type;
 vector<int> V;
 
 int binomialCoeff(int n, int k) {
+	// cout << n << "-" << k << endl;
 	// Base Cases
 	if (k > n)
 		return 0;
@@ -47,20 +48,19 @@ int main(int argc, char** argv) {
 			// redevelopment planning
 			int l, r, s;
 			cin >> l >> r >> s;
-			for (int j = 0; j <= r; j++) {
+			for (int j = l; j <= r; j++) {
 				s -= V[j];
 				}
-			cout << "s:" << s << endl;
+			int x = r - l + 1;
+			// cout << "s:" << s << endl;
 			if (s < 0)
-				cout << "s<0: " << 0 << endl;
-			else if (s == 0 || l == r)
-				cout << "s == 0 || l == r: " << 1 << endl;
-			else if ((r - 1) == 1)
-				cout << "(r - 1) == 1: " << s + 1 << endl;
+				cout << 0 << endl;
+			else if (s == 0 || x == 1)
+				cout << 1 << endl;
 			else if (s == 1)
-				cout << "s == 1: " << r - l + 1 << endl;
+				cout << r - l + 1 << endl;
 			else
-				cout << "ok " << binomialCoeff(s + (r - l) - 1, s) << endl;
+				cout << binomialCoeff(s + (x - 1), x - 1) << endl;
 			}
 		}
 	return 0;

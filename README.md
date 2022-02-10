@@ -18,8 +18,8 @@
 # OIS 21-22
 ## Round 1
 * ucl -> Ad-hoc difficile, Non completato
-* renovations -> 
-* martianwar -> 
+* renovations -> Coefficiente binomiale, 15 punti
+* martianwar -> Grafi - [Bridge](https://en.wikipedia.org/wiki/Bridge_%28graph_theory%29), 30 punti
 * keygen -> Manipolazione bit, 20 punti
 _**NOTE**_ : disks, brackets, buckets, police3 e boring fatti durante le lezioni
 
@@ -31,10 +31,6 @@ _**NOTE**_ : disks, brackets, buckets, police3 e boring fatti durante le lezioni
 
 # Da fare
 
-* Ucl -> Funziona solo col caso di test
-* Keygen -> Parsing + BOH
-* Martianwar -> Grafi - [Bridge](https://en.wikipedia.org/wiki/Bridge_%28graph_theory%29)
-* Renovations -> 
 * Picarats -> Grafo, scelta in base a difficoltà nodo e peso arco
   * Difficoltà minore
   * Peso maggiore
