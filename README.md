@@ -26,7 +26,7 @@ _**NOTE**_ : disks, brackets, buckets, police3 e boring fatti durante le lezioni
 
 ## Round 2
 * kalindrome -> String kth-palindrome
-  * _**NOTE**_ : `substr()` occupa tanta memoria, meglio controllare ogni carattere tramite `operator[]`
+  * `substr()` occupa tanta memoria, meglio controllare ogni carattere tramite `operator[]`
 * disks2 -> Ad-hoc semplice
 * pickup -> PD, non ho idea di come farlo, c'ho perso tipo 5 ore
 * stocks -> Controllo lineare, attenzione al max (considerare anche il primo elemento)
@@ -37,7 +37,6 @@ _**NOTE**_ : disks, brackets, buckets, police3 e boring fatti durante le lezioni
 * christmassballs -> DFS valutando per ogni nodo la massima frequenza del numero massimo di colori nel sottoalbero
   * Utilizza array di unordered_map, così da avere una mappa per ogni nodo
   * Per velocizzare, swappa la mappa del padre con quella più grande fra i suoi figli
-* 
 ## Round 3
 * 
 
