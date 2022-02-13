@@ -19,6 +19,7 @@
 		"vector": "cpp",
 		"system_error": "cpp",
 		"array": "cpp",
-		"regex": "cpp"
+		"regex": "cpp",
+		"map": "cpp"
 	}
 }
