@@ -15,6 +15,7 @@ typedef vector<int> vi;
 int n;
 ll m, l;
 map<ll, ii> mp;
+vector<pair<ll, ll>> ranges(MAXN);
 
 int main(int argc, char** argv) {
 	if (argc > 1) (void)!freopen(argv[1], "r", stdin); ios::sync_with_stdio(false); cin.tie(0);
@@ -22,31 +23,37 @@ int main(int argc, char** argv) {
 	ll tmp;
 	for (int i = 0; i < n; i++) {
 		cin >> tmp;
-		pair<ll, ll> p = { max((ll)0, tmp - m), min(tmp + m, l) };
-		cout << "---" << p.first << "-" << p.second << "---" << endl;
-		if (auto s = mp.find(p.first) == mp.end()) {
-			mp[p.first] = { 0,0 };
-			cout << "New start" << endl;
-			}
-		if (auto s = mp.find(p.second) == mp.end()) {
-			mp[p.second] = { 0,0 };
-			cout << "New end" << endl;
-			}
-		mp[p.first].second++;
-		mp[p.second].first++;
+		ranges[i] = { max((ll)0, tmp - m), min(tmp + m, l) };
+		if (mp.find(ranges[i].first) == mp.end())
+			mp[ranges[i].first] = { 0,0 };
+		if (mp.find(ranges[i].second) == mp.end())
+			mp[ranges[i].second] = { 0,0 };
 
-		auto start = mp.upper_bound(p.first);
-		auto end = mp.lower_bound(p.second);
-		for_each(start++, end--, [](auto& v) {
-			cout << "UP " << v.first << endl;
-			v.second.first++;
-			v.second.second++;
-			});
+		mp[ranges[i].first].second++;
+		mp[ranges[i].second].first++;
 		}
 
+	for (int i = 0; i < n; i++) {
+		auto start = mp.upper_bound(ranges[i].first);
+		auto end = mp.lower_bound(ranges[i].second);
+		for (;start != end; start++) {
+			start->second.first++;
+			start->second.second++;
+			}
+		}
+
+	int min_val = INT_MAX;
 	for (auto x : mp) {
-		cout << x.first << " : " << x.second.first << "," << x.second.second << endl;
+		if (x.first == 0)
+			min_val = min(min_val, x.second.second);
+		else if (x.first == l)
+			min_val = min(min_val, x.second.first);
+		else {
+			min_val = min(min_val, x.second.first);
+			min_val = min(min_val, x.second.second);
+			}
 		}
+	cout << min_val << endl;
 
 	return 0;
 	}

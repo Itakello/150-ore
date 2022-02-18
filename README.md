@@ -38,6 +38,9 @@ _**NOTE**_ : disks, brackets, buckets, police3 e boring fatti durante le lezioni
   * Utilizza array di unordered_map, così da avere una mappa per ogni nodo
   * Per velocizzare, swappa la mappa del padre con quella più grande fra i suoi figli
 ## Round 3
+* police6 -> Ad-hoc ranges
+* keyboard -> Ad-hoc stringhe, attenzione a "\n"
+* flappybird -> Ad-hoc semplice
 * 
 
 # Da fare

@@ -1,59 +1,54 @@
-// NOTE: it is recommended to use this even if you don't understand the following code.
-
-#include <iostream>
-#include <fstream>
-#include <vector>
+//https://training.olinfo.it/#/task/ois_marathon/statement
+#pragma GCC optimize ("Ofast") 
+#pragma GCC optimization ("unroll-loops")
+#include <bits/stdc++.h>
+#define MAXN 250005
 
 using namespace std;
 
-#define MAXN 250005
+typedef long long ll;
+typedef pair<int, int> ii;
+typedef vector<ii> vii;
+typedef vector<bool> vb;
+typedef vector<int> vi;
 
-// input data
-int N, Q;
-int X[MAXN], Y[MAXN]; // edges
+int n, q;
+vector<vi> adj(MAXN);
 
+struct treeNode {
+	int par,
+		depth,
+		size,
+		pos_segbase,
+		chain;
+	}
+node[MAXN];
 
-void init() {
-    // insert your code here...
-}
+struct edge {
+	int weight,
+		deeper_end;
+	}
+edge[MAXN];
 
-void toggle_edge(int x, int y) {
-    // ...and here...
-}
+int main(int argc, char** argv) {
+	if (argc > 1) (void)!freopen(argv[1], "r", stdin); ios::sync_with_stdio(false); cin.tie(0);
+	cin >> n >> q;
+	int type, x, y, sum = 0;
+	bool running;
+	for (int i = 0; i < n - 1; i++) {
+		cin >> x >> y;
+		adj[x].push_back({ y,0 });
+		adj[y].push_back({ x,0 });
+		}
+	while (q--) {
+		cin >> type >> x >> y;
+		if (type == 1) {
 
-bool is_reachable(int x, int y) {
-    // ...and also here
-    return 1;
-}
+			}
+		else {
 
+			}
+		}
 
-int main() {
-//  uncomment the following lines if you want to read/write from files
-//  ifstream cin("input.txt");
-//  ofstream cout("output.txt");
-
-    ios::sync_with_stdio(false);
-
-    cin >> N >> Q;
-    for (int i = 0; i < N - 1; i++) {
-        cin >> X[i] >> Y[i];
-    }
-
-    init();
-    int sum = 0;
-    for (int i = 0; i < Q; i++) {
-        int t, x, y;
-        cin >> t >> x >> y;
-        if (t == 1) {
-            toggle_edge(x, y);
-        } else {
-            x = (x + sum) % N + 1;
-            y = (y + sum) % N + 1;
-            bool ans = is_reachable(x, y);
-            cout << ans << '\n';
-            sum += ans;
-        }
-    }
-
-    return 0;
-}
+	return 0;
+	}
