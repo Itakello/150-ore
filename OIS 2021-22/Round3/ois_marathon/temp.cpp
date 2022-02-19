@@ -4,16 +4,18 @@ using namespace std;
 #define MAXM 250005
 
 vector<vector<int> >adj(MAXN);
+
 vector<int>heavy(MAXN);
 vector<int>head(MAXN);
 vector<int>Size(MAXN);
 vector<int>parent(MAXN);
 vector<int>pos(MAXN);
 vector<int>depht(MAXN);
+
 vector<int>st(4 * MAXN);
-int cur_pos = 0;
 vector<int>ar(MAXN);
-int n;
+int cur_pos = 0;
+int n, q;
 
 int get_max(int i, int l, int r, int ql, int qr) {
 	if (l >= ql && r <= qr)return st[i];
@@ -68,15 +70,15 @@ void update(int i, int l, int r, int poss) {
 		return;
 		}
 	int mid = (l + r) / 2;
-	if (poss <= mid)update(i * 2 + 1, l, mid, poss);
-	else update(i * 2 + 2, mid + 1, r, poss);
+	if (poss <= mid)
+		update(i * 2 + 1, l, mid, poss);
+	else
+		update(i * 2 + 2, mid + 1, r, poss);
 	st[i] = st[i * 2 + 1] + st[i * 2 + 2];
 	}
 
 int main() {
-	cin >> n;
-	int q;
-	cin >> q;
+	cin >> n >> q;
 	for (int i = 0;i < n - 1;i++) {
 		int a, b;
 		cin >> a >> b;
@@ -86,6 +88,7 @@ int main() {
 	int somma = 0;
 	dfs(1, 1, 0);
 	decompose(1, 1);
+
 	while (q--) {
 		int t1, t2, t3;
 		cin >> t1 >> t2 >> t3;
@@ -93,6 +96,8 @@ int main() {
 			if (parent[t2] == t3)update(0, 0, n - 1, pos[t2]);
 			else update(0, 0, n - 1, pos[t3]);
 			}
+
+
 		else {
 			t2 = (t2 + somma) % n + 1;
 			t3 = (t3 + somma) % n + 1;

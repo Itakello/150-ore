@@ -41,6 +41,7 @@ _**NOTE**_ : disks, brackets, buckets, police3 e boring fatti durante le lezioni
 * police6 -> Ad-hoc ranges
 * keyboard -> Ad-hoc stringhe, attenzione a "\n"
 * flappybird -> Ad-hoc semplice
+* marthon -> [hld](https://cp-algorithms.com/graph/hld.html) (heavy-light decomposition) su albero
 * 
 
 # Da fare
